@@ -1,0 +1,22 @@
+
+.div1{
+    background-color: red;
+}
+.div2{
+    background-color: blue;
+}
+.div3{
+    background-color: orange;
+}
+.div4{
+    background-color: green;
+}
+.div5{
+    background-color: yellow;
+}
+.a{
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 1mm;
+}

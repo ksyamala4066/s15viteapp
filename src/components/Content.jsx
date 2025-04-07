@@ -1,0 +1,26 @@
+import React from 'react'
+import Page1 from './Page1'
+import P2p1 from './p2p1'
+import P2p2 from './p2p2'
+import { commands } from 'npm'
+
+const content = ({store}) => {
+
+    function page(){
+        switch(store.getState()){
+            case "Page1":
+               return(<div><Page1 store={store}/></div>)
+            case "p2p1":
+                return(<div><P2p1 store={store}/></div>)
+            case "p2p2":
+                    return(<div><P2p2 store={store}/></div>)
+            default: return(<div><page store={store}/></div>)
+        }
+    }
+  return (
+    <div>
+        <page/>
+    </div>
+  )
+}
+export default Content
